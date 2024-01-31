@@ -251,7 +251,7 @@ h6 {
     font-size: 1.25rem;
   }
 }
- p{
+p, a{
     font-size: 1.25rem; 
     color: var(--md-sys-color-on-background);
 }
@@ -261,7 +261,7 @@ h6 {
     color: var(--md-sys-color-surface-tint);
 }
 @media only screen and (min-width: 45em) {
-    p {
+    p , a{
         font-size: 1.5rem;
     }
     .special--links { 
@@ -499,7 +499,9 @@ h6 {
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
-.about--article h2{
+.about--article h2, 
+.portfolio--container h2
+{
     text-align: center;
 
 }
@@ -519,4 +521,11 @@ h6 {
 }
 .experience--title {
     display: block;
+}
+
+/* --------- PORTFOLIO -------- */ 
+
+.portfolio--container{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }

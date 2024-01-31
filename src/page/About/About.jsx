@@ -47,6 +47,7 @@ function About(){
                     <div>
                       <a
                         href="https://www.algonquincollege.com/"
+                        aria-label="Go to Algonquin College webpage"
                         className="special--links"
                       >
                         Location
@@ -59,14 +60,12 @@ function About(){
                     <div>
                       <p className="special--text">Description</p>
                       <p>
-                        Supporting students in the Mobile App Design program by
-                        assisting with coding challenges and reinforcing
-                        fundamental development concepts. Conducting engaging
-                        lab sessions to enhance comprehension of mobile and web
-                        development, fostering an environment where questions
-                        are welcomed. Collaborating with professors in
-                        fast-paced classes to address code issues and ensure a
-                        smooth learning experience for everyone.
+                        Supporting Mobile App Design students by aiding with
+                        coding challenges, reinforcing development concepts, and
+                        conducting engaging lab sessions. Collaborating with
+                        professors to address code issues in fast-paced classes,
+                        fostering a welcoming environment for questions and
+                        ensuring a smooth learning experience.
                       </p>
                     </div>
                   </article>
@@ -80,6 +79,7 @@ function About(){
                       <a
                         href="https://www.kanatanorthba.com/"
                         className="special--links"
+                        aria-label="Go to katanata north webpage"
                       >
                         Location
                       </a>
