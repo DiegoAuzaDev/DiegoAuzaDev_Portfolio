@@ -1,33 +1,37 @@
 
 function Header(){
     return (
-      <div className="container--color">
+      <>
         <header className="container">
           <div className="container--header">
-            <div>
-              <a href="*">
-                <p>Diego Auza</p>
+            <div className="header--title">
+              <a href="https://www.linkedin.com/in/diego-auza-a64b1b253/" role="link" aria-label="Go to Diego's linkedin profile">
+                Diego Auza
               </a>
             </div>
             <nav>
-              <ul>
+              <ul role="list">
                 <li>
-                  <a href="" aria-label="Go to the about section">
+                  <a href="" aria-label="Go to the about section" role="link">
                     About
                   </a>
                 </li>
                 <li>
-                  <a href="" aria-label="Go to the skills section">
+                  <a href="" aria-label="Go to the skills section" role="link">
                     Skills
                   </a>
                 </li>
                 <li>
-                  <a href="" aria-label="Go to the portfolio section">
+                  <a
+                    href=""
+                    aria-label="Go to the portfolio section"
+                    role="link"
+                  >
                     Portfolio
                   </a>
                 </li>
                 <li>
-                  <a href="" aria-label="Go to the contact section">
+                  <a href="" aria-label="Go to the contact section" role="link">
                     Contact
                   </a>
                 </li>
@@ -35,7 +39,7 @@ function Header(){
             </nav>
           </div>
         </header>
-      </div>
+      </>
     );
 }
 export default Header

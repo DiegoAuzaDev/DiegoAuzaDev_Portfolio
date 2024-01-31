@@ -72,8 +72,6 @@ h5,
 h6,
 p,
 figure,
-ul,
-ol,
 blockquote,
 dl,
 dd {
@@ -253,6 +251,77 @@ h6 {
   }
 }
 p {
+    font-size: 1.25rem; /* Default font size for <p> elements */
     color: var(--md-sys-color-on-background);
-    font-size: 1.25rem;
 }
+
+@media only screen and (min-width: 45em) {
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    p {
+        font-size: 1.75rem;
+    }
+}
+
+/*  ---------- HEADER ------------------ */
+/* Adjust padding and change display to column on smaller screens */
+@media only screen and (max-width: 60em) {
+    .container--header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .container--header ul {
+        margin-top: 1rem; 
+    }
+
+    .header--title {
+        font-size: 1.563rem;
+        margin-bottom: 1rem; 
+    }
+
+    .container--header a {
+        margin-bottom: 0.5rem; 
+    }
+}
+
+.container--header { 
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.container--header ul { 
+    display: flex;
+}
+.header--title { 
+    display: flex;
+    font-size: 1.563rem;
+}
+.container--header a { 
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.container--header a:hover,
+.container--header a:focus {
+    outline: 2px solid var(--md-sys-color-primary); /* Adjust the color as needed */
+}
+.container--header a:hover,
+.container--header a:focus {
+    background-color: var(--md-sys-color-primary); /* Adjust the color as needed */
+    color: var(--md-sys-color-on-primary); /* Adjust the color as needed */
+}
+.container--header a {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
