@@ -84,6 +84,7 @@ ol[role='list'] {
     list-style: none;
 }
 
+
 /* Set core root defaults */
 html:focus-within {
     scroll-behavior: smooth;
@@ -175,13 +176,13 @@ h1 {
 h2 {
   font-size: 1.756rem;
   line-height: 1.3;
+  margin-bottom: 1.5rem;
   color: var(--md-sys-color-on-background);
 }
 
 h3 {
   font-size: 1.525rem;
   margin-bottom: 0;
-  text-transform: uppercase;
   line-height: 1.3;
   color: var(--md-sys-color-on-background);
 }
@@ -250,21 +251,31 @@ h6 {
     font-size: 1.25rem;
   }
 }
-p {
+ p{
     font-size: 1.25rem; 
     color: var(--md-sys-color-on-background);
 }
-
+.special--links { 
+    font-weight: 800;
+    font-size: 1.25rem; 
+    color: var(--md-sys-color-surface-tint);
+}
 @media only screen and (min-width: 45em) {
     p {
         font-size: 1.5rem;
     }
+    .special--links { 
+    font-size: 1.5rem; 
+}
 }
 
 @media only screen and (min-width: 60em) {
     p {
         font-size: 1.75rem;
     }
+    .special--links { 
+    font-size: 1.75rem; 
+}
 }
 
 /*  ---------- HEADER ------------------ */
@@ -496,4 +507,16 @@ p {
 .special--text {
     font-weight: 800;
     color: var(--md-sys-color-surface-tint);
+}
+
+.about--experience {
+    background-color: var(--md-sys-color-scrim);
+    padding: 2rem;
+}
+
+.about--experience li::marker{
+    color: var(--md-sys-color-surface-tint);
+}
+.experience--title {
+    display: block;
 }
