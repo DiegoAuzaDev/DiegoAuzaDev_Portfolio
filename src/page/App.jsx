@@ -1,3 +1,4 @@
+import About from "./About/About"
 import Banner from "./banner/Banner"
 import Header from "./header/Header"
 
@@ -10,6 +11,7 @@ function App() {
      <Header/>
      <main>
       <Banner/>
+      <About/>
      </main>
     </>
   )

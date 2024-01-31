@@ -251,7 +251,7 @@ h6 {
   }
 }
 p {
-    font-size: 1.25rem; /* Default font size for <p> elements */
+    font-size: 1.25rem; 
     color: var(--md-sys-color-on-background);
 }
 
@@ -276,6 +276,7 @@ p {
         align-items: center;
         padding-top: 2rem;
         padding-bottom: 2rem;
+        margin-bottom: 3rem;
     }
     .container--header ul {
         margin-top: 1rem; 
@@ -295,6 +296,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 .container--header ul { 
     padding: 0;
@@ -478,4 +480,20 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+/* ------ ABOUT -------*/
+.about--container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.about--article h2{
+    text-align: center;
+
+}
+
+.special--text {
+    font-weight: 800;
+    color: var(--md-sys-color-surface-tint);
 }
