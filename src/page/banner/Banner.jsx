@@ -37,7 +37,7 @@ function Banner(){
                       href="https://github.com/DiegoAuzaDev"
                       aria-label="go Diego's github account"
                     >
-                      <img src={git} alt="Github logo" />
+                      <img src={git} alt="Github logo" className=""/>
                     </a>
                   </li>
                 </ul>

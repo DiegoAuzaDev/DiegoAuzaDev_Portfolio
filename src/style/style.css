@@ -293,10 +293,20 @@ p {
     padding-top: 2rem;
     padding-bottom: 2rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .container--header ul { 
+    padding: 0;
     display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.container--header li {
+       margin: 1rem;
 }
 .header--title { 
     display: flex;
@@ -335,11 +345,48 @@ p {
     display: flex;
     padding: 1rem;
     margin: 0;
-    gap: 2rem;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.banner--links li a {
+    display: flex;
+    padding: 0.5rem;
+}
+.banner--links li a:hover, 
+.banner--links li a:focus {
+    background-color: var(--md-sys-color-primary-container); 
+    color: var(--md-sys-color-primary-container); 
+}
+.banner--links img{
+    height: 2.3rem;
+}
+
+@media only screen and (min-width: 45em) {
+   .banner--links { 
+    display: flex;
+    padding: 1rem;
+    margin: 0;
+    gap: 1.7rem;
     justify-content: center;
 }
 .banner--links img{
+    height: 2.5rem;
+}
+}
+
+@media only screen and (min-width: 60em) {
+   .banner--links { 
+    display: flex;
+    padding: 1rem;
+    margin: 0;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.banner--links img{
     height: 3rem;
+}
 }
 .container--banner {
     display: flex;
@@ -348,15 +395,14 @@ p {
     align-items: center;
 }
 .banner--background {
-
-    height: 22rem;
-    width: 22rem;
+    height: 16rem;
+    width: 16rem;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    border: 1rem solid var(--md-sys-color-primary-container);
+    border: 0.5rem solid var(--md-sys-color-primary-container);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -371,12 +417,49 @@ p {
 
 .banner--background img {
     border: 0.75rem solid var(--md-sys-color-on-primary);
+    height: 15rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+@media only screen and (min-width: 45em) {
+       .banner--background {
+    height: 20rem;
+    width: 20rem;
+    border: 0.8rem solid var(--md-sys-color-primary-container);
+    margin-bottom: -10rem;
+}
+    .banner--background img {
+    border: 1rem solid var(--md-sys-color-on-primary);
+    height: 18rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+ 
+}
+
+@media only screen and (min-width: 60em) {
+    .banner--background {
+    height: 22rem;
+    width: 22rem;
+    border: 1rem solid var(--md-sys-color-primary-container);
+    margin-bottom: -10rem;
+}
+.banner--background img {
+    border: 0.75rem solid var(--md-sys-color-on-primary);
     height: 20rem;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+}
 }
 .banner--content{
     background-color: var(--md-sys-color-surface-container-lowest);
@@ -391,6 +474,7 @@ p {
     border-bottom: 0.5rem solid var(--md-sys-color-primary-container);
 }
 .banner--text { 
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
