@@ -1,7 +1,7 @@
 
 function Header(){
     return (
-      <>
+      <div className="container--color">
         <header className="container">
           <div className="container--header">
             <div>
@@ -35,7 +35,7 @@ function Header(){
             </nav>
           </div>
         </header>
-      </>
+      </div>
     );
 }
 export default Header
