@@ -9,6 +9,10 @@
 
 :root {
   --md-border-rem: 0.928rem;
+  --md-time-long : 0.75s;
+  --md-time-mid : 0.45s;
+  --md-time-short : 0.35s;
+
   --md-sys-color-primary: rgb(210 194 255);
   --md-sys-color-surface-tint: rgb(206 189 254);
   --md-sys-color-on-primary: rgb(26 9 66);
@@ -336,7 +340,7 @@ a {
 
 .container--header a:hover,
 .container--header a:focus {
-  outline: 2px solid var(--md-sys-color-on-primary);
+  outline: 0.125rem solid var(--md-sys-color-on-primary);
 }
 .container--header a:hover,
 .container--header a:focus {
@@ -439,18 +443,20 @@ a {
 .banner--background:hover {
   border-color: var(
     --md-sys-color-surface-tint
-  ); /* Adjust the color as needed */
+  ); 
 }
 
 .banner--background img {
   border: 0.75rem solid var(--md-sys-color-on-primary);
   height: 15rem;
+  width: 15rem;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+
 
 @media only screen and (min-width: 45em) {
   .banner--background {
@@ -462,6 +468,7 @@ a {
   .banner--background img {
     border: 1rem solid var(--md-sys-color-on-primary);
     height: 18rem;
+    width: 18rem;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -480,6 +487,7 @@ a {
   .banner--background img {
     border: 0.75rem solid var(--md-sys-color-on-primary);
     height: 20rem;
+    width: 20rem;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -490,10 +498,10 @@ a {
 .banner--content {
   background-color: var(--md-sys-color-surface-container-lowest);
   padding-top: 12rem;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  border-top-left-radius: 3.125rem;
+  border-top-right-radius: 3.125rem;
+  border-bottom-left-radius: 3.125rem;
+  border-bottom-right-radius: 3.125rem;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-bottom: 3rem;
@@ -523,7 +531,30 @@ a {
 
 .about--experience {
   background-color: var(--md-sys-color-scrim);
+  padding: 1rem;
+}
+.title--button{
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 45em) {
+  .title--button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+  .about--experience {
+  background-color: var(--md-sys-color-scrim);
   padding: 2rem;
+}
+}
+
+@media only screen and (min-width: 60em) {
+ .about--experience {
+  background-color: var(--md-sys-color-scrim);
+  padding: 3rem;
+}
 }
 
 .about--experience li::marker {
@@ -539,3 +570,45 @@ a {
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
+
+.button {
+  padding: 1rem 2rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  border: 0.125rem solid var(--md-sys-color-primary);
+  transition: all var(--md-time-short);
+  -webkit-transition: all var(--md-time-short);
+  -moz-transition: all var(--md-time-short);
+  -ms-transition: all var(--md-time-short);
+  -o-transition: all var(--md-time-short);
+}
+.button:hover,
+.button:focus {
+    background-color: var(--md-sys-color-on-primary);
+    color: var(--md-sys-color-primary);
+    border: 0.125rem solid var(--md-sys-color-primary);
+}
+/* .button :active {
+    background-color: var(--md-sys-color-primary-fixed);
+    color: var(--md-sys-color-on-primary-fixed);
+    border: 0.125rem solid var(--md-sys-color-primary-fixed);
+} */
+
+@media only screen and (min-width: 45em) {
+    .button  {
+        font-size: 1.5rem;
+        padding: 0.75rem 1.5rem; 
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    .button  {
+        font-size: 1.25rem;
+        padding: 0.5rem 1rem; 
+    }
+}
+

@@ -1,10 +1,22 @@
+import { useEffect, useRef, useState } from "react";
+import { useInView } from "react-intersection-observer";
+
+
+
 function About(){
+
+const { ref: readSectionRef, inView: readIsVisibe } = useInView();
+
+
+
+
+
     return (
       <>
         <section className="container">
           <div className="about--container">
             <article className="about--article">
-              <h2>About Me</h2>
+              <h2 ref={readSectionRef}>About Me</h2>
             </article>
             <div>
               <p>
@@ -36,9 +48,13 @@ function About(){
                 out.
               </p>
             </div>
+
             <div className="about--experience">
-              <h2>My experience</h2>
-              <ul>
+              <div className="title--button">
+                <h2>My experience</h2>
+              </div>
+              <ul
+              >
                 <li>
                   <h3 className="experience--title">
                     Program Assistance, Part-time.
@@ -73,7 +89,7 @@ function About(){
                 <li>
                   <h3 className="experience--title">
                     Full-stack Developer, Part-time.
-                  </h3>
+                  </h3> 
                   <article>
                     <div>
                       <a
