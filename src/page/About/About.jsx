@@ -1,22 +1,19 @@
-import { useEffect, useRef, useState } from "react";
+
 import { useInView } from "react-intersection-observer";
 
 
 
+// eslint-disable-next-line react/prop-types
 function About(){
 
 const { ref: readSectionRef, inView: readIsVisibe } = useInView();
-
-
-
-
 
     return (
       <>
         <section className="container">
           <div className="about--container">
             <article className="about--article">
-              <h2 ref={readSectionRef}>About Me</h2>
+              <h2 id="aboutSection">About Me</h2>
             </article>
             <div>
               <p>
@@ -49,12 +46,14 @@ const { ref: readSectionRef, inView: readIsVisibe } = useInView();
               </p>
             </div>
 
-            <div className="about--experience">
+            <div
+              ref={readSectionRef}
+              className={`about--experience ${readIsVisibe ? "isVisible" : ""}`}
+            >
               <div className="title--button">
                 <h2>My experience</h2>
               </div>
-              <ul
-              >
+              <ul>
                 <li>
                   <h3 className="experience--title">
                     Program Assistance, Part-time.
@@ -89,7 +88,7 @@ const { ref: readSectionRef, inView: readIsVisibe } = useInView();
                 <li>
                   <h3 className="experience--title">
                     Full-stack Developer, Part-time.
-                  </h3> 
+                  </h3>
                   <article>
                     <div>
                       <a

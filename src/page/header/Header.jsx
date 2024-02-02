@@ -1,5 +1,15 @@
-
+/* eslint-disable react/prop-types */
+import { scroller } from "react-scroll";
 function Header(){
+
+  const scrollOptions = {
+    duration: 750,
+    smooth: true,
+  };
+  const scrollToAboutSection = () => {
+    scroller.scrollTo("aboutSection", scrollOptions);
+  };
+
     return (
       <>
         <header className="container">
@@ -31,7 +41,11 @@ function Header(){
                   </a>
                 </li>
                 <li>
-                  <a href="" aria-label="Go to the about section" role="link">
+                  <a
+                    onClick={scrollToAboutSection}
+                    aria-label="Go to the about section"
+                    role="link"
+                  >
                     About
                   </a>
                 </li>
