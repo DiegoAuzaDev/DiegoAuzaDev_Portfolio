@@ -2,7 +2,11 @@ import img from "../../assets/diego_Auza_Photo.webp";
 import git from "../../assets/Github_icon.webp"
 import link from "../../assets/LinkedIn_icon.webp"
 import backimg from "../../assets/backImage.webp";
+
+
 function Banner(){
+
+
     const backgroundImageStyle = {
       backgroundImage: `url(${backimg})`,
       backgroundSize: "cover",
@@ -11,7 +15,7 @@ function Banner(){
       display : "flex",
     };
     return (
-      <div  style={backgroundImageStyle}>
+      <div style={backgroundImageStyle}>
         <div className="banner--color">
           <section className="container">
             <div className="container--banner">
@@ -26,6 +30,7 @@ function Banner(){
                 <ul className="banner--links" role="list">
                   <li>
                     <a
+                      target="__blank"
                       href="https://www.linkedin.com/in/diego-auza-a64b1b253/"
                       aria-label="go Diego's linkedin profile"
                     >
@@ -34,10 +39,11 @@ function Banner(){
                   </li>
                   <li>
                     <a
+                      target="__blank"
                       href="https://github.com/DiegoAuzaDev"
                       aria-label="go Diego's github account"
                     >
-                      <img src={git} alt="Github logo" className=""/>
+                      <img src={git} alt="Github logo" className="" />
                     </a>
                   </li>
                 </ul>

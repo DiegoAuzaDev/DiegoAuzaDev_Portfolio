@@ -9,6 +9,9 @@ function Header(){
   const scrollToAboutSection = () => {
     scroller.scrollTo("aboutSection", scrollOptions);
   };
+  const scrollToPortfolioSection = ()=> {
+     scroller.scrollTo("portfolioSection", scrollOptions);
+  }
 
     return (
       <>
@@ -16,6 +19,7 @@ function Header(){
           <div className="container--header">
             <div className="header--title">
               <a
+                target="__blank"
                 href="https://www.linkedin.com/in/diego-auza-a64b1b253/"
                 role="link"
                 aria-label="Go to Diego's linkedin profile"
@@ -33,7 +37,7 @@ function Header(){
 
                 <li>
                   <a
-                    href=""
+                    onClick={scrollToPortfolioSection}
                     aria-label="Go to the portfolio section"
                     role="link"
                   >
