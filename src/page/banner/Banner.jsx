@@ -26,7 +26,10 @@ function Banner(){
                 <div className="banner--text">
                   <p>Hello, I am Diego Auza</p>
                   <h1>Mobile and Web developer</h1>
-                  <p>If you want to talk to me you can send me a message by LinkedIn</p>
+                  <p>
+                    If you want to talk to me, you can send me a message on
+                    LinkedIn.
+                  </p>
                 </div>
                 <ul className="banner--links" role="list">
                   <li>
