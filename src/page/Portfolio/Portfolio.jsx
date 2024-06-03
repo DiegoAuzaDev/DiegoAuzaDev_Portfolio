@@ -92,10 +92,10 @@ function Portfolio() {
                       </p>
                       <p>
                         <span className="special--text">Description : </span>{" "}
-                        When I was on first semester I developed my final
-                        project making use of all the knowledge that I have
-                        learned about <span className="special--text">DOM</span>
-                        , <span className="special--text">events</span>,{" "}
+                        When I was in my first semester, I developed my final
+                        project using all the knowledge I had learned about
+                        about <span className="special--text">DOM</span>,{" "}
+                        <span className="special--text">events</span>,{" "}
                         <span className="special--text"> fetch</span> and
                         <span className="special--text"> History API</span>.
                       </p>
@@ -105,8 +105,8 @@ function Portfolio() {
                           {" "}
                           mobile first web app
                         </span>{" "}
-                        that lets the user search for movies or tv shows and
-                        then see the full cast for the movie or show.
+                        hat lets the user search for movies or TV shows and then
+                        see the full cast for the movie or show
                       </p>
                       <p className="special--text">Features : </p>
                       <ul>
