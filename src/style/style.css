@@ -710,6 +710,9 @@ a {
   }
 }
 .item--first {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
   opacity: 1;
   transform: translateX(0%);
   -webkit-transform: translateX(0%);

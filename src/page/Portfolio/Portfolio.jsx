@@ -1,11 +1,16 @@
 import { useInView } from "react-intersection-observer";
 import VideoHub from "../../assets/Hub350Video.mp4";
 import Java from "../../assets/rc24-duke-java-mascot.webp";
+import RPA from "../../assets/rpa.png";
 
 function Portfolio() {
   const { ref: firstItemIframe, inView: firstItemIframeIsVisibe } = useInView();
   const { ref: secondtItemIframe, inView: secondItemIframeIsVisibe } =
     useInView();
+  const { ref: javaItemframe, inView: javaItemframeIsVisibe } = useInView();
+  const { ref: canadaItemframe, inView: canadaItemframeIsVisibe } =
+    useInView();
+
   return (
     <>
       <section className="container">
@@ -22,6 +27,51 @@ function Portfolio() {
             </article>
             <div>
               <ul role="list" className="portfolio--ul">
+                <li className="portfolio--container--color">
+                  <h3>
+                    Automating Student Transcript Upload Using
+                    <span className="special--text"> RPA</span>
+                  </h3>
+                  <div className="portfolio--grid">
+                    <article>
+                      <p>
+                        <span className="special--text">Tech stack : </span>
+                        Ui Path, Outlook, Jira Software
+                      </p>
+                      <p>
+                        <span className="special--text">Description : </span>
+                        {`Our mission is to collaboratively work towards the
+                        successful implementation of the RPA solution, ensuring
+                        the seamless automation of the transcript upload process
+                        to Jira. We are committed to delivering a high-quality
+                        solution that meets the client's requirements and
+                        contributes to the efficiency of the HR department.`}
+                      </p>
+                    </article>
+                    <div
+                      ref={canadaItemframe}
+                      className={`portfolio--item--color item--second ${
+                        canadaItemframeIsVisibe ? "isVisible" : ""
+                      }`}
+                    >
+                      <img src={RPA} alt="RPA logo" />
+                    </div>
+                  </div>
+
+                  <div className="item--button">
+                    <button
+                      className="button"
+                      onClick={() => {
+                        window.open(
+                          "https://docs.google.com/presentation/d/1aWWawaEcxClS903a1a00HyQcBjHgHjuml-m8cUbytYQ/edit?usp=sharing",
+                          "_blank"
+                        );
+                      }}
+                    >
+                      Go to Slides
+                    </button>
+                  </div>
+                </li>
                 <li className="portfolio--container--color">
                   <h3>
                     Hub350{" "}
@@ -163,9 +213,9 @@ function Portfolio() {
                   </h3>
                   <div className="portfolio--grid">
                     <div
-                      ref={secondtItemIframe}
+                      ref={javaItemframe}
                       className={`portfolio--item--color item--second ${
-                        secondItemIframeIsVisibe ? "isVisible" : ""
+                        javaItemframeIsVisibe ? "isVisible" : ""
                       }`}
                     >
                       <img src={Java} alt="Java logo" />
@@ -188,6 +238,7 @@ function Portfolio() {
                       <a href="https://www.udemy.com/course/java-the-complete-java-developer-course/?couponCode=ST19MT60324">
                         Java 17 Masterclass: Start Coding in 2024
                       </a>
+                      <br />
                       <a href="https://horstmann.com/corejava/">
                         Core Java Volume I Fundamentals
                       </a>

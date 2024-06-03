@@ -33,6 +33,8 @@ const { ref: readSectionRef, inView: readIsVisibe } = useInView();
                 <span className="special--text"> Angular</span>. I also have
                 some experience with backend technologies like
                 <span className="special--text"> Firebase</span>,
+                <span className="special--text"> Node JS</span>,
+                <span className="special--text"> Java</span>,
                 <span className="special--text"> MongoDB</span>, and
                 <span className="special--text"> Redis</span>.
               </p>
@@ -54,6 +56,34 @@ const { ref: readSectionRef, inView: readIsVisibe } = useInView();
                 <h2>My experience</h2>
               </div>
               <ul>
+                <li>
+                  <h3 className="experience--title">Development Lead</h3>
+                  <article>
+                    <div>
+                      <a
+                        href="https://www.cse-cst.gc.ca/en"
+                        aria-label="Go to Communications Security Establishment Canada Web page"
+                        className="special--links"
+                      >
+                        Location
+                      </a>
+                      <p>Communications Security Establishment</p>
+                    </div>
+                    <div>
+                      <p className="special--text">Description</p>
+                      <p>
+                        {`This project aims to automate the process of uploading
+                        students' transcripts to Jira for the Human Resources
+                        Student Program at the Communication Security
+                        Establishment. The team will be implementing Robotic
+                        Process Automation (RPA) using UiPath to enhance
+                        operational efficiency, minimize manual intervention,
+                        and reduce errors associated with handling student
+                        transcripts`}
+                      </p>
+                    </div>
+                  </article>
+                </li>
                 <li>
                   <h3 className="experience--title">
                     Program Assistance, Part-time.
