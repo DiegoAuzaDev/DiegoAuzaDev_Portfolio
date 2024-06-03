@@ -29,11 +29,11 @@ function Header(){
             </div>
             <nav>
               <ul role="list">
-                <li>
+                {/* <li>
                   <a href="" aria-label="Go to the contact section" role="link">
                     Contact
                   </a>
-                </li>
+                </li> */}
 
                 <li>
                   <a

@@ -447,6 +447,10 @@ a {
   margin-bottom: -10rem;
   z-index: 100000;
   transition: border-color 0.3s ease;
+  -webkit-transition: border-color 0.3s ease;
+  -moz-transition: border-color 0.3s ease;
+  -ms-transition: border-color 0.3s ease;
+  -o-transition: border-color 0.3s ease;
 }
 
 .banner--background:hover {
@@ -533,6 +537,10 @@ a {
 .special--text {
   font-weight: 800;
   color: var(--md-sys-color-surface-tint);
+}
+.special--text--dark {
+  font-weight: 800;
+  color: var(--md-sys-color-on-surface);
 }
 
 .about--experience {
@@ -778,3 +786,8 @@ a {
     margin-bottom: 0;
   }
 }
+
+
+/*  Lead Up */
+
+

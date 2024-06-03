@@ -1,5 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import VideoHub from "../../assets/Hub350Video.mp4";
+import Java from "../../assets/rc24-duke-java-mascot.webp";
 
 function Portfolio() {
   const { ref: firstItemIframe, inView: firstItemIframeIsVisibe } = useInView();
@@ -153,6 +154,56 @@ function Portfolio() {
                       }}
                     >
                       Visit Movie+ Page
+                    </button>
+                  </div>
+                </li>
+                <li className="portfolio--container--color">
+                  <h3>
+                    Mastering <span className="special--text">Java</span>
+                  </h3>
+                  <div className="portfolio--grid">
+                    <div
+                      ref={secondtItemIframe}
+                      className={`portfolio--item--color item--second ${
+                        secondItemIframeIsVisibe ? "isVisible" : ""
+                      }`}
+                    >
+                      <img src={Java} alt="Java logo" />
+                    </div>
+                    <article>
+                      <p>
+                        <span className="special--text">Tech stack : </span>
+                        Java
+                      </p>
+                      <p>
+                        {`This repo has two main folders, the first one is
+                        Challenges where you can find all the challenges I had
+                        completed during the time I was taking the Udemy course
+                        and some extra taken from the book as well. The second
+                        folder "MasterClass" contains code related with core
+                        java lessons`}
+                      </p>
+
+                      <p className="special--text">Resources : </p>
+                      <a href="https://www.udemy.com/course/java-the-complete-java-developer-course/?couponCode=ST19MT60324">
+                        Java 17 Masterclass: Start Coding in 2024
+                      </a>
+                      <a href="https://horstmann.com/corejava/">
+                        Core Java Volume I Fundamentals
+                      </a>
+                    </article>
+                  </div>
+                  <div className="item--button">
+                    <button
+                      className="button"
+                      onClick={() => {
+                        window.open(
+                          "https://github.com/DiegoAuzaDev/Mastering-Java",
+                          "_blank"
+                        );
+                      }}
+                    >
+                      Go to Github
                     </button>
                   </div>
                 </li>
