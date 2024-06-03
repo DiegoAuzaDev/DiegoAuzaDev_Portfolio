@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+video {
+  width: -webkit-fill-available;
+}
+
 /* root color */
 
 :root {
@@ -706,6 +710,7 @@ a {
   -o-transform: translateX(0%);
 }
 .item--second {
+  height: auto;
   opacity: 1;
   transform: translateX(0%);
   -webkit-transform: translateX(0%);
